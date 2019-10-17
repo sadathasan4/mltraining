@@ -12,7 +12,7 @@ test <- read.csv('https://raw.githubusercontent.com/raqueeb/mltraining/master/ML
 
 library(rpart)
 
-# 
+# create a model
 
 model <- rpart(Survived ~ Pclass + Sex + Age + SibSp + Parch + 
                  Fare + Embarked, data=train, method="class")
